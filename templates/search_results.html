@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Search Results</h1>
+    <p>Search term: {{ search_text }}</p>
+    <ul>
+        {% for document in results %}
+            <li>
+                <a href="{{ url_for('makale_detay', yayinId=document['yayinId']) }}" target="_blank">{{ document['baslik'] }}</a><br>
+                <strong>Authors: </strong>{{ document.yazarlar|join(', ') }}<br>
+                <strong>Publication Date: </strong> {{ document.pub_date }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makale Detay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="makale-detay">
+        <h1>{{ makale.baslik }}</h1>
+        <table>
+            <tr>
+                <td><strong>ID:</strong></td>
+                <td>{{ makale.yayinId }}</td>
+            </tr>
+            <tr>
+                <td><strong>Yazarlar:</strong></td>
+                <td>{{ makale.yazarlar }}</td>
+            </tr>
+            <tr>
+                <td><strong>Abstract:</strong></td>
+                <td>{{ makale.abstract }}</td>
+            </tr>
+            <tr>
+                <td><strong>Publication Date:</strong></td>
+                <td>{{ makale.pub_date }}</td>
+            </tr>
+            <tr>
+                <td><strong>Subject:</strong></td>
+                <td>{{ makale.subjects }}</td>
+            </tr>
+            <tr>
+                <td><strong>Makale URL:</strong></td>
+                <td><a href="{{ makale.urlMakale }}" target="_blank">{{ makale.urlMakale }}</a></td>
+            </tr>
+            <tr>
+                <td><strong>PDF URL:</strong></td>
+                <td><a href="{{ makale.pdfUrl }}" target="_blank">{{ makale.pdfUrl }}</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
