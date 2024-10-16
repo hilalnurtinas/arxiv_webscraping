@@ -1,4 +1,5 @@
 EN
+------------
 Academic Web Scraping Application
 This project is a web application that scrapes academic publications from academic search engines like ArXiv, stores the data in a MongoDB database, and processes HTML content using BeautifulSoup. The application also allows users to search, view, and dynamically filter the scraped data.
 
@@ -39,9 +40,9 @@ Python 3.x
 MongoDB
 To install the required Python packages, run the following command:
 pip install -r requirements.txt
-
-
+------------
 TR
+------------
 Akademik Web Kazıma (Scraping) Uygulaması
 Bu proje, ArXiv gibi akademik arama motorlarından web kazıma yöntemiyle akademik yayınların bilgilerini elde eden, bu verileri MongoDB veritabanında saklayan ve BeautifulSoup kullanarak HTML içeriklerini işleyen bir web uygulamasıdır. Ayrıca, uygulama üzerinden arama yapma, verileri görüntüleme ve dinamik filtreleme gibi işlemler yapılabilmektedir.
 
